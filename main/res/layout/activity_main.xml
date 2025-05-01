@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-1dp">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip5"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="6dp"
+        android:background="#8A7F7F"
+        app:chipIconEnabled="true"
+        app:chipIconSize="12dp"
+        app:chipSurfaceColor="#A49696"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/chip2" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip4"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="6dp"
+        android:background="#8A7F7F"
+        app:chipIconEnabled="true"
+        app:chipIconSize="12dp"
+        app:chipSurfaceColor="#A49696"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/chip2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/background1sari"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxButtonHeight="150dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip6"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="6dp"
+        android:background="#8A7F7F"
+        app:chipIconEnabled="true"
+        app:chipIconSize="12dp"
+        app:chipSurfaceColor="#A49696"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/chip3" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:barrierDirection="left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/menuicon" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="14dp"
+        android:background="#CCCCCC"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Turkcell"
+        app:chipIcon="@drawable/turkcell"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip3"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="6dp"
+        android:background="#8A7F7F"
+        app:chipIconEnabled="true"
+        app:chipIconSize="12dp"
+        app:chipSurfaceColor="#A49696"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/chip2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="74dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="@+id/chip3"
+        app:layout_constraintTop_toTopOf="@+id/chip3"
+        app:srcCompat="@drawable/pasa"
+        android:background="..."
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="72dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chip6"
+        app:srcCompat="@drawable/turkcellsuper" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="paket,servis veya işlem arayın"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/profilicon" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="604dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:srcCompat="@drawable/turkcell1" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip7"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:text="Paketini Değiştir"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip8"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="32dp"
+        android:text="Ek Paket Al"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip9"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:text="Fatura Öde"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip7" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip10"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="32dp"
+        android:text="Otamatik Ödeme"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip8" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip11"
+        android:layout_width="377dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/background3mavi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="525dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:fontFamily="serif"
+        android:text="Kalan Kullanımlarım"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="498dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" GNÇ Maksi 13GB "
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="543dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="606dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13 gün kaldı"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="645dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Kalan 0.00 GB"
+        android:textSize="11sp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="570dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
