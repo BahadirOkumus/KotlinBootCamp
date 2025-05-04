@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/anaSayfa">
+
+    <fragment
+        android:id="@+id/anaSayfa"
+        android:name="com.example.odevfragment.AnaSayfa"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/go_A"
+            app:destination="@id/asayfasi" />
+        <action
+            android:id="@+id/go_X"
+            app:destination="@id/xsayfasi" />
+    </fragment>
+    <fragment
+        android:id="@+id/asayfasi"
+        android:name="com.example.odevfragment.Asayfasi"
+        android:label="fragment_asayfasi"
+        tools:layout="@layout/fragment_asayfasi" >
+        <action
+            android:id="@+id/go_B"
+            app:destination="@id/bsayfasi" />
+    </fragment>
+    <fragment
+        android:id="@+id/bsayfasi"
+        android:name="com.example.odevfragment.Bsayfasi"
+        android:label="fragment_bsayfasi"
+        tools:layout="@layout/fragment_bsayfasi" >
+        <action
+            android:id="@+id/go_Y_and"
+            app:destination="@id/ysayfasi" />
+    </fragment>
+    <fragment
+        android:id="@+id/xsayfasi"
+        android:name="com.example.odevfragment.Xsayfasi"
+        android:label="fragment_xsayfasi"
+        tools:layout="@layout/fragment_xsayfasi" >
+        <action
+            android:id="@+id/go_Y"
+            app:destination="@id/ysayfasi" />
+    </fragment>
+    <fragment
+        android:id="@+id/ysayfasi"
+        android:name="com.example.odevfragment.Ysayfasi"
+        android:label="fragment_ysayfasi"
+        tools:layout="@layout/fragment_ysayfasi" >
+        <action
+            android:id="@+id/go_main"
+            app:destination="@id/anaSayfa" />
+    </fragment>
+</navigation>
